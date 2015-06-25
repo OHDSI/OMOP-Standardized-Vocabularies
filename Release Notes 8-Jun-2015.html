@@ -1,22 +1,20 @@
-<html>
-<h1>Release 8-Jun-2015</h1>
+Release 8-Jun-2015
 
-<h2>Addition: Vocabulary CIEL and mappings</h2>
+Addition: Vocabulary CIEL and mappings
 All added CIEL Concepts are non-Standard (source). Mapping to SNOMED, LOINC, CPT4 and RxNorm were added. The vocabulary is ready to be used for OpenMRS data conversion OMOP CDM.
 
-<h2>Addition: DM+D Drug Concepts to SNOMED</h2>
+Addition: DM+D Drug Concepts to SNOMED
 DM+D was added to the SNOMED vocabulary, which is now a union of SNOMED International, SNOMED UK and DM+D (SNOMED UK Drug Extension). No relationships were added yet. The next release will contain relationships to RxNorm, ATC and the newly added BNF Drug Class vocabulary.
 
-<h2>Addition: LOINC mapping to SNOMED and CPT4</h2>
+Addition: LOINC mapping to SNOMED and CPT4
 Mapping of LOINC Concepts to SNOMED was added. In addition, mapping from LOINC Concepts to CPT4 was added. Note: Both mappings are work in progress and cover only a small percentage of LOINC Concepts.
 
-<h2>Refresh: Vocabulary GPI and mappings</h2>
+Refresh: Vocabulary GPI and mappings
 The GPI Drug Vocabulary was updated to the latest release 15.2.1.002, including mappings to RxNorm. Note: Not all GPI Concepts have valid concept_name entries. The ones that don't contain a single space character.
 
-<h2>Refresh: Vocabulary OPCS4 and relationships</h2>
+Refresh: Vocabulary OPCS4 and relationships
 OPCS4 concepts and mappings to SNOMED were refreshed, and the CONCEPT_ANCESTOR table updated accordingly
 
-<h2>Bug fix: NDC duplicate mapping removed</h2>
+Bug fix: NDC duplicate mapping removed
 NDC codes mapped to Quantified Clinical Drug or Quantified Branded Drug are remapped to their non-quantified equivalents. The bug did not deprecate existing such mappings that were overwritten by a refresh. As a result, about 2,800 NDC codes had mappings to two different RxNorm Concepts.
 
-</html>
