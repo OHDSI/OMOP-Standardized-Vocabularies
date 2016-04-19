@@ -1,0 +1,13 @@
+Added: ICD10CM (US mostly Condition vocabulary)
+
+All these codes have been added, as well as the mapping to Standard Concept. ICD10CM concepts are non-standard, just like ICD9CM. Note: ICD10CM is the US Version of ICD10, which is maintained by the WHO. Many codes are equivalent, but ICD10CM has a lot of additional Concepts (almost 4 times as many). Please make sure you use ICD10CM when mapping US-based data, even though in the US the vocabulary is often called ICD10. For international data use ICD10 and not ICD10CM.
+
+Added: Added DPD (Canadian Drugs)
+
+That includes all drug products in RxNorm notation: All concept classes, including artificial ones like "Branded Drug Component" or "Clinical Drug Form", and all relationship. All concepts for which there is an equivalent in RxNorm got mapped to that but remain non-standard source Concepts, the others became Standard Concepts of their own. "Equivalent" means that the ingredients, their strengths, their brand name and their dose form match (if available in the Concept Class). The CONCEPT_ANCESTOR table includes that as well. The only drug classification that the new drugs participate on their own (not through their RxNorm equivalents) is ATC. So, querying for ATC 21601980 "Protectives against UV-radiation for topical use" will pull up DPD 44571962 "PADIMATE O 8% TOPICAL LOTION [ULTIMATE MOIST SPF 15]", but also RxNorm Ingredient 915391 "Octinoxate" and RxNorm Clinical Drug 19106372 "4-Aminobenzoic Acid 21 MG/ML / Methoxsalen 10 MG/ML Topical Solution".
+
+A few new vocabularies will come up. The process is defined here: http://www.ohdsi.org/web/wiki/doku.php?id=documentation:international_drugs.
+
+Revised: HCPCS Procedure Drugs
+
+These are often called J-codes, even though many of them don't start with a J. There are a little less than 1000 of them, indicating drugs administered as part of healthcare administration in the office or hospital. They are mapped to the optimal RxNorm Concept available. That is often not a Clinical Drug, but a Clinical Drug Form or Component.
