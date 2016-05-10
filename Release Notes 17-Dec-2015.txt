@@ -1,0 +1,32 @@
+Release Notes 17-Dec-2015
+
+Refresh: Updated most of the vocabularies with releases.
+Refresh: The FDB vocabularies GCN_SEQNO, Indication and ETC
+
+They are also contained in the hierarchy. However, we have the the same problem as with the SPL to RxNorm hierarchy, and we are working on including those non-standard hierarchies. That means, currently you may find ingredients missing as descendants from ETC or Indication concepts. There is also a bug with calculating the min_levels_of_separation and max_levels_of_separation values. Both problems will be fixed in the January release.## Refactored: All Type Concept are now member of a single Domains. The domain_id and vocabulary_id fields used to be identical.
+Refactored: NDC and SPL
+
+We did a big cleanup of these two vocabularies: Both NDC and SPL is now sourced from RxNorm (built from half a dozen commercial and public sources), Dailymed and the FDA. As a result, we probably have the most comprehensive selection of NDCs and SPLs, including mapping of each to RxNorm.
+
+Note that the valid_start_date and valid_end_date now defines when the NDC was active in the market. However, as always, we will keep mappings of non-active NDC to active RxNorm, so that the ETL to OMOP CDM will always come up with a valid concept.
+
+We also changed the logic of the algorithms to define the mapping between NDC and RxNorm to ensure a strict set of rules:
+
+    All NDC have one valid mapping to RxNorm. The exception could be a mapping to a set of ingredients, but we currently don't have those.
+    If different sources have conflicting mappings, we select the most granular one (Branded > Clinical, Pack > Drug > Form/Component > Ingredient)
+
+What we have not yet completed is the correct incorporation of SPL to RxNorm mapping into the hierarchy, as this will depart from the current logic that all descendants of the descendants of a given concepts are in turn descendants of that concept. In other words, an SPL might have and RxNorm ingredient as a descendant, but not all descendants (e.g. Clinical Drugs) are descendants of that SPL, but only the one that actually got the product label. We are currently testing this and will document well in the next release in January.
+
+We also have not yet added the frequent NDCs from various databases that are not in any of our sources. Those mappings are underway as well.
+Refactored: RxNorm's "Quantified" and "Pack" concepts are no longer de-standardized
+
+Mappings to these are no longer redirected to the equivalent Clinical or Branded Drugs.
+Addition: All archived RxNorm concepts from "rxnatomarchive"
+
+In the past, only obsolete RxNorms that had some history (mapping or so) were included.
+Addition: New Panel relationship between LOINC concepts and incorporation into the hierarchy
+Bug fix: Life cycle information (deprecation) of relationships "Maps to"
+
+These were not properly syncronized with "Mapped from".
+Bug fix: SNOMED concept names were truncated if they contained more than one set of parentheses.
+Bug fix: Removed 'Quantified form of' relationship between NDC and RxNorm

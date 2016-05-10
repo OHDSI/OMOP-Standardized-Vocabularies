@@ -1,0 +1,15 @@
+Release 17-Jul-2015
+Refresh: RxNorm, ATC, VA Class, NDFRT, NDC, SPL
+
+All these vocabularies were updated to the latest version.
+Refactored: MeSH
+
+All MeSH are incorporated that represent Concepts of the Condition, Procedure, Drug and Measurement domains and have a mapping to CPT4, RxNorm, SNOMED and LOINC Concepts. Note: MeSH is very large, and in contrast to other databases we load only those codes that we can map to Standard Concepts.
+
+Note that the vocabulary is now called "MeSH" (not "Mesh" or "MESH")
+
+This repository contains the Release Notes of the Standardized Vocabularies.
+
+Note: It does not contain the actual Release. You can find that at the Athena website.
+
+It also does not contain the scripts and programs to generate the Standard Vocabularies. Those are at the Github repository.

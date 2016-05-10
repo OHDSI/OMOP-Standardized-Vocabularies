@@ -1,0 +1,79 @@
+Release Notes 11-Mar-2016
+
+General
+Added: US version of SNOMED.
+
+We now have SNOMED International, SNOMED UK, DM+D (SNOMED UK Drug extension) and SNOMED US. They are all consolidated together under the vocabulary_id "SNOMED". There is no way to distinguish which concept is generated from where. Relationships also go across all four SNOMED sources.
+Fixed: Double white spaces in concept_name
+
+These are generally introduced by the source vocabularies, but cause trouble when searching.
+Fixed: Duplicates in SPL
+
+Because of capital case spelling of legacy SPL concepts, their identity wasn't matched to concepts from the current sources, which are all spelled in lower cases.
+Fixed: Dupicates in GPI
+
+The source of these duplicates is unclear.
+Fixed: Destandardize SNOMED Gender concepts
+
+SNOMED concepts of the Gender domain were erroneously set standard_concept = 'S'. Only the OMOP generated Gender concepts are standard now.
+Fixed: Destandardize concepts that are invalid
+
+A number of concepts that were deprecated (invalid_reason='D') or upgraded (invalid_reason='U') where erroneously still standard (standard_concept='S'). This is now fixed.
+Fixes to the Drug Domain
+Added: Provision for packaged or boxed drugs.
+
+The Drug domain has the new Concept Classes "Quantified Branded Drug Box", "Quantified Clinical Drug Box", "Branded Drug Box" and "Clinical Drug Box", as well as the relationships "Available as box" and "Box of".
+Changed: New relationship between Branded Drugs and Brand Names.
+
+Brand Names were treated like Ingredients, jumping several levels. The solution is to rename the relationship "Has ing" to "Has brand name".
+Added: CONCEPT_RELATIONSHIP recors for adding new drug vocabularies
+
+New relationships between RxNorm Ingredients, Brand Names and Dose Forms and those of the new vocabulary have been added: "Has standard ing", "Has standard brand" and "Has standard form".
+Changed: DRUG_STRENGTH table
+
+    Add all drug Concept Classes that contain strength information are now added to the table.
+    The denominator_value field was added to allow Quantified Drug concepts to have records in the table.
+
+Fixed: Removed erroneous and legacy ETC-RxNorm relationships
+
+    Relationships between ETC concepts and RxNorm Brand Names
+    "Inferred class of" relationships and their reverse counterparts. These where introduced to fix the gap between ETC concepts and Ingredients or Drug Components/Forms, who ETC concepts were not connected to. This is no longer necessary due to the below CONCEPT_ANCESTOR table fix for the Drug domain.
+    Equivalence relationships by name
+
+Fixes to the CONCEPT_RELATIONSHIP table
+Fixed: Asymmetric deprecation in relationships
+
+Relationships and their reverse counterparts have to be identical. Over time, source vocabulary problems and processing bugs have created a number of dissociations. This is fixed and can no longer occur.
+Changed: Simplified replacement records
+
+The "SNOMED Replaced by" and "RxNorm replaced by" relationships were changed to "Concept replaced by", and similarly for their reverse counterparts.
+Fixed: Remove "Original maps to" CONCEPT_RELATIONSHIP records
+
+These records used to map NDC codes to Quantified Drug concepts, when those were non-standard. Now, they mapped like all other drug codes through "Maps to" records.
+Fixed: "Concept replaced by" relationships between concepts of different vocabularies
+
+These have been removed.
+Fixed: Remove cyclical relationships
+
+"Maps to" and replacement relationships have accumulated cyclical combinations with their reverse counterparts. These have been removed.
+Fixed: Resolve replacement relationship chains
+
+If the Concept 2 of a replacement relationship becomes upgraded itself, it will rerouted to the concept it is rerouted to, creating chains of replacement relationships. If the final Concept 2 is deprecated, the entire chain will get also deprecated. This allows complete integrety of these relationships.
+Fixed: Resolve mapping relationship chains
+
+Similarly to replacement relationship chains, mapping chains are also resolved.
+Fixed: Replacement relationships point to non-standard concepts
+
+This is fixed and can no longer occur. If the Concept 2 of a replacement or mapping relationship is deprecated, the relationship is also deprecated.
+Fixes to the CONCEPT_ANCESTOR table affecting the Drug domain
+Fixed: Wrong levels due to wrong is_hierarchical flags.
+
+This affected mostly records connecting Drug classes (ATC, VA Class, NDFRT) to RxNorm.
+Fixed: Wrong levels due to relationships between classes and RxNorm drug concepts other than Ingredient
+
+This is now fixed in such a way that the levels now reflect the true separation within the hierarchy, and additional records were added for those that were omitted by the source. In particular, Drug class concepts ETC, ATC, VA Class, Indication and SPL have relationships to Clinical or Branded Drugs or Quantified equivalents thereof. The Ingredients were omitted, leading to the problem that Ingredients were not retrieved when querying the CONCEPT_ANCESTOR table with these class concepts. Initially, this was fixed by re-routing the Drug class to the Ingredients. But that approach caused erroneous hierarchies: All children of an Ingredient became also children of the drug class. Particularly in the case of SPL, where the original relationship was only pointing to a small number of drug products, the re-routing through the ingredients would recruit all other drug products with the same ingredients as descendants of that SPL. This led to an explosion of SPL-RxNorm relationships in the CONCEPT_ANCESTOR table.
+
+The new solution creates a different behavior in the hierarchy for the Drug domain. Usually, all for any ancestor, the descendants of its descendants are also descendat of that ancestor. In Drug, the situation is possible that there are descendants of Ingredient concepts that are not descendants of a drug class concept, even though the Ingredient is a descendant itself.
+Fixed: CONCEPT_ANCESTOR levels between Branded Drugs and Brand Names.
+
+See above for the introduction of new non-hierarchical relationships between them. Brand information does no longer participate in the drug hierarchy.
