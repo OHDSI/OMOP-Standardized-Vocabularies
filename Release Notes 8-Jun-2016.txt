@@ -1,0 +1,18 @@
+Release Notes 8-Jun-2016
+
+General
+Updated: HCPCS.
+
+Including the mapping of J-Codes and similar Procedure Drugs.
+
+Updated: RxNorm, NDFRT, Read, ATC, VA Product, VA Class, MeSH, GPI
+
+Updated: ICD10CM mapping to SNOMED
+
+Added: DPD
+
+This is a Database of all approved Canadian prescription drugs and those OTC drugs that are found in the data. 
+
+Fixed: Chains of "Maps to" and "Concept replaced by" relationships
+
+We finally worked through the wicked logic of those, which can appear and be deprecated at the same time as new concepts appear or old concepts get deprecated. Hopefully, this solves the problem now for good.
