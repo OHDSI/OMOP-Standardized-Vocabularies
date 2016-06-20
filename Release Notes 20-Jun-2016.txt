@@ -1,0 +1,6 @@
+Release Notes 20-Jun-2016
+
+Updated: SNOMED. In particular, we changed all referrals to Domain Observation (instead of Procedure)
+Updated: RxNorm, NDFRT, ATC, VA Product
+Added: Few Death Types with detailed causes
+Added: ICD10PCS. All codes have been loaded. Note: We have no internal hierarchy and no hierarchical connection to SNOMED Procedures yet.
