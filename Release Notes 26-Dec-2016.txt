@@ -1,0 +1,7 @@
+Release Notes 20-Jun-2016
+
+Added: Concept "Classes Dose Form Group", "Clinical Dose Group", "Branded Dose Group"
+Added: RxNorm Extension: RxNorm-like vocabulary created by OHDSI. Added Concept Class "Marketed Drug" and "Supplier".
+Added: Drug vocabularies EphMRA ATC, NFC, dm+d, BDPM, THIN Gemscript (encrypted Gemscript), AMT, AMIS, LPD_Australia, GRR
+Changed: Relationship_id between RxNorm and other drug vocabularies
+
