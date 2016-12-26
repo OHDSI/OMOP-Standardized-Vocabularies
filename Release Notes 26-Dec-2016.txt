@@ -1,4 +1,4 @@
-Release Notes 20-Jun-2016
+Release Notes 26-Dec-2016
 
 Added: Concept "Classes Dose Form Group", "Clinical Dose Group", "Branded Dose Group"
 Added: RxNorm Extension: RxNorm-like vocabulary created by OHDSI. Added Concept Class "Marketed Drug" and "Supplier".
