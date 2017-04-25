@@ -1,0 +1,10 @@
+Release Notes 24-April-2017
+
+Includes updates rolled out in January - April, 2017
+
+Updated:
+  SNOMED, NDFRT, RxNorm, ATC, VA Product, VA Class
+
+Changed:
+  Fixed 'multiple "Maps to" mappings' issue.
+
