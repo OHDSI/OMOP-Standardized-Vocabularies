@@ -1,0 +1,5 @@
+Release Notes 26-Jun-2017
+
+Fixed: RxNorm Extension. All records have now reliable ancestry relationships. "Three-legged dogs" (drugs with partial dosage information on ingredients) were removed. Quantified versions of drugs correspond with the non-quantified counterpart. Pack hierarchy was introduced. 
+Fixed: DPD. All records are now source concepts, with the respective mapping and equivalent relationships to RxNorm Extension.
+Fixed: Ambiguous ATC links to drugs where cleaned up.
