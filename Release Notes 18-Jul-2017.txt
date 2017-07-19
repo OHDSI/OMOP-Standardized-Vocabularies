@@ -1,0 +1,5 @@
+Release Notes 26-Jun-2017
+
+Fixed: DA_France and BDPM. Improved coverage.
+Fixed: GRR. Changed Coding to FCC system. 
+Updated: ICD10CM
