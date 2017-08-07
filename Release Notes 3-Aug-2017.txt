@@ -1,6 +1,6 @@
-Release Notes 7-Aug-2017
+Release Notes 3-Aug-2017
 
-Fixed
+## Fixed
 
 1. RxNorm Extension. Brand Names, Ingredients, Suppliers and corresponding drugs are cleaned up.
 
@@ -8,11 +8,11 @@ Fixed
 
 3. dm+d. Multiple mappings removed. dm+d - RxNorm Extension relationships are built according to the new RxNorm Extension requirements.
 
-Added
+## Added
 
 1. CVX vocabulary. Has relationships to RxNorm and RxNorm Extension and ATC-like hierarchy.
 
-Updated
+## Updated
 
 1. Gemscript. Added mappings that weren't covered with Gemscript - dm+d mapping.
 
