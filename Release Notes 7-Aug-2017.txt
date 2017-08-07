@@ -1,0 +1,20 @@
+Release Notes 7-Aug-2017
+
+Fixed
+
+1. RxNorm Extension. Brand Names, Ingredients, Suppliers and corresponding drugs are cleaned up.
+
+2. ATC. Multicomponent drugs that have link to ATC doesn't have this ATC related to their Ingredients.
+
+3. dm+d. Multiple mappings removed. dm+d - RxNorm Extension relationships are built according to the new RxNorm Extension requirements.
+
+Added
+
+1. CVX vocabulary. Has relationships to RxNorm and RxNorm Extension and ATC-like hierarchy.
+
+Updated
+
+1. Gemscript. Added mappings that weren't covered with Gemscript - dm+d mapping.
+
+2. Read. Read vaccines concepts now have mappings to CVX or RxNorm.
+
