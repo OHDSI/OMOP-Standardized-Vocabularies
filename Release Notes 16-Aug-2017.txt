@@ -1,0 +1,11 @@
+# Release Notes 16-Aug-2017
+
+## Updated
+
+CPT4
+
+## Changed
+
+SNOMED domain definition:
+Measurement domain is only some test or evaluation itself now,
+while the result of test or measurement, like "anemia" or "Cardiac troponin positive" belongs to the Condition domain.
