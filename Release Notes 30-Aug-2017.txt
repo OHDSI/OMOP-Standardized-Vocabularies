@@ -1,0 +1,17 @@
+# Release Notes 30-Aug-2017
+
+## Fixed
+
+### RxNorm Extension. 
+Brand Names are cleaned up. Replacement for updated Suppliers and Brand Names added.
+Incorrect dosages that occur due to source vocabularies bias fixed.
+Gases dosages transformed into percents.
+
+### ICD9CM
+Concept names are fixed
+http://forums.ohdsi.org/t/utf-8-characters-not-translating-to-vocabularies/3195
+
+## Updated
+
+RxNorm and related vocabularies: NDFRT, VA Product, VA Class, ATC
+
