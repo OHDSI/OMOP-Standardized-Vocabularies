@@ -1,0 +1,11 @@
+# Release Notes 13-Sep-2017
+
+## Fixed
+
+### DA_France
+
+Correct mappings were built
+
+## Added
+
+PPI vocabulary
