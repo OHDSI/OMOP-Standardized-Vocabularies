@@ -1,0 +1,19 @@
+# Release Notes 06-Sep-2017
+
+## Fixed
+
+### SNOMED
+
+Hierarchy fixed
+
+### LOINC
+
+Observation domain assigned for qualitative assessments
+
+## Updated 
+
+AMT
+
+LPD_Australia
+
+RxNorm
