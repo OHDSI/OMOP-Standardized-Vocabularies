@@ -1,0 +1,11 @@
+# Release Notes 18-Oct-2017
+
+## Fixed
+
+### RxNorm Extension
+Added new concepts
+
+## Updated
+
+### Gemscript
+Improved and expanded mapping of Gemscript
