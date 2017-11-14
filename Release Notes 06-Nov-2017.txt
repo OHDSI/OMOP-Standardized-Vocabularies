@@ -1,0 +1,10 @@
+# Release Notes 06-Nov-2017
+
+## Fixed
+
+### LOINC
+
+## Updated
+
+### NDC, SPL, HCPCS, PPI
+
