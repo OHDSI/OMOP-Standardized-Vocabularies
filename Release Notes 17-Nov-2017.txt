@@ -1,0 +1,28 @@
+# Release Notes 17-Nov-2017
+
+## Fixed 
+
+- LOINC
+
+## Updated and Fixed 
+
+### SNOMED
+
+- Standard Route concepts added, note, some concepts that were the standard Route changed their domain now, so you need use the new concepts:
+
+    Old concept_id concept_name -> new_concept_id concept_name
+    45956873 Obsolete-Oromucosal other -> 4186839 Oromucosal
+    45956876 Obsolete-Intraventricular -> 4222259 Intraventricular cardiac
+    4112421 Intravenous -> 4171047 Intravenous
+    4115462 Rectal -> 4290759 Rectal
+    4120036 Inhaling -> 45956874 Inhalation
+    4128792 Nasal -> 4262914 Nasal
+    4128794 Oral -> 4132161 Oral
+    4136280 Intravaginal -> 4057765 Vaginal
+    4139962 Subcutaneous -> 4142048 Subcutaneous
+    4231622 Topical ->  4263689 Topical route
+
+### PPI
+
+- physical measurements added
+
