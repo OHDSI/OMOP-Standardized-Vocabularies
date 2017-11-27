@@ -40,3 +40,6 @@ Physical measurements values and modifiers updated
 
 Vaccines mappings updated
 
+ICD9CM
+
+Mappings to SNOMED updated
