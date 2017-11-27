@@ -1,0 +1,36 @@
+# Release Notes 25-Nov-2017
+
+## Added
+
+### ICDO3 vocabulary
+
+It contains 
+* original ICDO3 topography and morphology codes
+linked to their SNOMED equivalents throught "ICDO - SNOMED" relationship
+
+*artificially built combination concepts like*: 
+concept_code = '8000/0-C00', concept_name = 'Neoplasm, benign of Lip structure', that is a combination of '8000/0' "Neoplasm, benign" and 'C00' "Lip"
+Such a concepts have 
+
+* relationships to ICDO3
+-"Has Topography ICDO" --link to topography ('C00')
+"Has Histology ICDO" -- to Histology ('8000/0')
+
+* relationships to SNOMED
+
+1) if the concept has exact SNOMED equivalent
+"Maps to" , for example our '8000/0-C00' 'Neoplasm, benign of Lip structure' 'Maps to' SNOMED 92185002 Benign neoplasm of lip
+
+2) if it doesn't have SNOMED equivalent, for example, '8140/3-C61.9' "Adenocarcinoma of Prostate gland", it has the following relationships:
+"Is a" SNOMED 93974005 Primary malignant neoplasm of prostate (Hierarchical SNOMED parent)
+"Has finding site" SNOMED 279689003 Prostatic gland structure
+"Has asso morph" SNOMED 35917007 Adenocarcinoma
+
+## Updated
+
+### PPI
+
+Physical measurements values and modifiers updated
+
+### Read. Vaccines mappings updated
+
