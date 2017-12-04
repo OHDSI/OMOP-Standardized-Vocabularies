@@ -1,0 +1,24 @@
+# Release Notes 04-Dec-2017
+
+## Added 
+
+### CDT
+
+## Updated 
+
+### CPT4
+
+- Preferred names used
+
+### HCPCS
+
+- Blood components get domain_id = 'Device'
+
+### ICD9CM
+
+- Mappings to Standard concepts updated
+
+### SNOMED
+
+- Blood components get domain_id = 'Device'
+
