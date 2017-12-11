@@ -1,0 +1,16 @@
+# Release 11-Dec-2017
+ 
+## Added
+
+### ISBT
+
+- ISBT Attributes
+
+- ISBT Product codes belong to ISBT vocabulary and have hierarchical relationships to "ISBT Attributes" concepts (ISBT Class, ISBT Modifier, ISBT Attribute value, ISBT Attribute group, ISBT Category)
+
+## Updated
+
+### ICD10CM
+
+- Mappings to Standard concepts updated
+
