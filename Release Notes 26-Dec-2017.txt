@@ -1,0 +1,10 @@
+# Release 26-Dec-2017
+
+## Fixed
+
+### HCPCS
+
+* Mappings to Standard RxNorm concepts added 
+
+* Domains reassigned
+
