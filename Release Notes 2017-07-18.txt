@@ -1,4 +1,4 @@
-Release Notes 26-Jun-2017
+Release Notes 18-Jul-2017
 
 Fixed: DA_France and BDPM. Improved coverage.
 Fixed: GRR. Changed Coding to FCC system. 
