@@ -1,0 +1,15 @@
+# Release 18-Jan-2018
+
+## Renamed
+
+BCFI vocabulary_id renamed to vocabulary_id = 'GGR'
+which stands for  "Gecommentarieerd Geneesmiddelen Repertorium",
+so translated vocabulary_name = 'Commented Drug Directory (BFCI)'
+Note: if you use any queries including vocabulary_id = 'BCFI', please use vocabulary_id = 'GRR' instead.
+
+## Added 
+
+### LPD_Belgium
+
+Custom Belgium Drug vocabulary, IQVIA proprietary
+
