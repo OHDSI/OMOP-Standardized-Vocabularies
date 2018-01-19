@@ -1,0 +1,17 @@
+# Release 11-Jan-2018
+ 
+## Added
+
+### BCFI - Official Belgium Drug vocabulary 
+
+Contains official concept set with links to RxNorm or RxNorm Extension
+ 
+## Updated
+
+### RxNorm
+
+Concepts derived from BCFI added
+
+### CPT4, HCPCS 
+
+Mappings to a Standard concepts added
