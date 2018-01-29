@@ -1,0 +1,12 @@
+# Release 2018-01-27 
+
+## Added
+
+Cost vocabulary 
+
+## Updated 
+
+Cost Type vocabulary 
+
+This allows to represent the details in a Cost table
+More information [here] (http://forums.ohdsi.org/t/cost-vocabulary-addition-to-omop/3862).
