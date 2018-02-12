@@ -1,0 +1,31 @@
+# Release 2018-02-10
+
+## Updated 
+
+### ICD9CM
+
+  SNOMED mappings were carefully reviewed and fixed
+
+### ISBT, ISBT Attribute
+
+  25 JAN 2018 version 
+
+### With 20180205 RxNorm release were updated:
+
+* **RxNorm**
+* **VA Product**
+* **NDFRT**
+* **ATC**
+
+### SNOMED
+
+  SnomedCT Release 20180131
+
+### UCUM
+
+  Added new unit: "Vector-genome"
+
+### Visit
+
+  [https://github.com/OHDSI/Vocabulary-v5.0/issues/149]()
+
