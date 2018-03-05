@@ -1,0 +1,34 @@
+# Release 2018-03-02
+
+## Updated 
+
+### Visit vs place of service
+
+  [http://forums.ohdsi.org/t/visit-vs-place-of-service/4006]()
+
+- Place of Service
+- Visit
+- Visit Type
+
+### UCUM 
+
+  [https://github.com/OHDSI/Vocabulary-v5.0/issues/159]()
+
+### APC
+
+- Condition Type
+
+## Added 
+
+### UB04
+
+  [http://forums.ohdsi.org/t/inclusion-into-vocabulary-codes-for-point-of-origin-priority-of-admission-and-patient-discharge-status/2042/4]()
+
+- UB04 Point of Origin
+
+- UB04 Pri Typ of Adm
+
+- UB04 Pt dis status
+
+- UB04 Typ bill
+
