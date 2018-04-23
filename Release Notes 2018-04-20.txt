@@ -1,0 +1,20 @@
+# Release 2018-04-20
+
+## Updated
+
+### With 20180402 RxNorm release were updated:
+
+* **RxNorm**
+* **NDFRT**
+
+### NDC
+
+NDC and SPL Release 20180420
+
+Initial work on domains; domain 'Device' introduced
+Added NDCs from package
+
+### UCUM
+
+Added new unit: [SQU] to be used for standardized quality units (e.g. SQ-HDM)
+
