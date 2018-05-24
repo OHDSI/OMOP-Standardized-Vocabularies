@@ -1,0 +1,14 @@
+# Release 2018-05-22
+
+## Updated
+
+* **ICDO3** - updated 
+
+* **NDC** - added mapping for Histrelin
+
+* **NDFRT** - updated
+
+* **RxNorm** - updated using logic from RxNorm API
+
+* **UCUM** - added units
+
