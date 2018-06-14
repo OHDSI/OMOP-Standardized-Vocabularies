@@ -1,0 +1,11 @@
+# Release 2018-06-09
+
+## Updated
+
+* **Gemscript** - fixed insulin mappings 
+
+* **HCPCS** - updated, added drug mappings
+
+* **ISBT, ISBT Attribute, Read** - updated
+
+
