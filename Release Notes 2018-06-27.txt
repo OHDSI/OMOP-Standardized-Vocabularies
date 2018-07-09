@@ -1,0 +1,10 @@
+# Release 2018-06-27
+
+## Updated
+
+* **ABMS, HES Specialty, NUCC, Specialty, LOINC, NDC** - updated
+
+* **CPT4, HCPCS** - Outdated concepts are Standard now according to [this proposal](http://forums.ohdsi.org/t/proposal-to-keep-outdated-standard-concepts-active-and-standard/3695/22)
+
+* **ICD9Proc** - Made mappings, hierarchical relationships to SNOMED procedure concepts and to SNOMED attribute concepts
+
