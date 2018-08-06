@@ -1,0 +1,14 @@
+# Release 2018-08-03
+
+## Updated
+
+* **CPT4, LPD_Belgium** - update
+
+* **RxNorm Extension**
+
+  - Fixed bug in parsing ("No" prefix)
+  - Fixed ado-trastuzumab drugs
+  - Correct wrong volumes
+  - Fix close Dose Forms
+  - Remove Ingredient, Dose Form and Brand Name duplicates
+
