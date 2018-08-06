@@ -1,0 +1,10 @@
+# Release 2018-07-02
+
+## Updated
+
+* **RxNorm, NDFRT** - update
+
+* **ICD9Proc** - update and mapping to SNOMED
+
+* **Cost** - add Cost concepts
+
