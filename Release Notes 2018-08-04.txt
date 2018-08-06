@@ -1,0 +1,10 @@
+# Release 2018-08-04
+
+## Updated
+
+* **DA_France** - update
+
+* **Condition Type, Drug Type, Meas Type, Procedure Type** - add NLP derived `type_concept_ids`
+
+* **RxNorm** - update (deprecated concepts)
+
