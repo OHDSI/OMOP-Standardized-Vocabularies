@@ -1,0 +1,20 @@
+# Release 2018-08-22
+
+## Updated
+
+* **CDT**
+
+* **HCPCS**
+
+* **ISBT, ISBT Attribute**
+
+* **KDC**
+
+* **MeSH**
+
+* **NDFRT**
+
+* **PPI**
+
+* **RxNorm, RxNorm Extension**
+
