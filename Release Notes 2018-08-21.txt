@@ -1,0 +1,9 @@
+# Release 2018-08-21
+
+## Updated
+
+* **DA_France**
+
+* **LPD_Australia**
+
+* **SNOMED**
